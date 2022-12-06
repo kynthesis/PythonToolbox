@@ -20,7 +20,7 @@ for line in readlines:
     if (d[str(speaker_num)] >= 200):
         continue
 
-    text = f'./vivos/waves/' + filename[:10] + '/' + filename + '.wav|' + str(int(filename[8:10])) + '\n'
+    text = f'./vivos/' + filename[:10] + '/' + filename + '.wav|' + str(int(filename[8:10])-1) + '\n'
     
     if (d[str(speaker_num)] >= 180):
         writelines2.append(text)
